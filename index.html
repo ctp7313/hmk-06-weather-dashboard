@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container ">
+      <div class="form-group form-inline d-flex justify-content-between">
+        <label for="city-input">Find the weather & forecast for your city </label>
+        <input type="text" class="form-control" name="city" id="city-input" placeholder="City name" />
+        <button type="submit" class="btn btn-primary" id="city-search">Search</button>
+      </div>
+    </div>
+  </nav>
+ 
+
+  <div class="container hide">
+    <!-- Current Weather -->
+    <div class="card d-flex justify-content-center">
+      <div class="card-body">
+        <h5 class="city"></h5>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+        <div class="tempF"></div>
+      </div>
+    </div>
+    <!-- Forecast Cards -->
+    <div class="row d-flex justify-content-between" id="forecast">
+      <div class="col-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="date" id="day1"></div>
+            <div class="wind" id="wind1"></div>
+            <div class="humidity" id="humid1"></div>
+            <div class="tempF" id="temp1"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="date" id="day2"></div>
+            <div class="wind" id="wind2"></div>
+            <div class="humidity" id="humid2"></div>
+            <div class="tempF" id="temp2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="date" id="day3"></div>
+            <div class="wind" id="wind3"></div>
+            <div class="humidity" id="humid3"></div>
+            <div class="tempF" id="temp3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="date" id="day4"></div>
+            <div class="wind" id="wind4"></div>
+            <div class="humidity" id="humid4"></div>
+            <div class="tempF" id="temp4"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="date" id="day5"></div>
+            <div class="wind" id="wind5"></div>
+            <div class="humidity" id="humid5"></div>
+            <div class="tempF" id="temp5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
